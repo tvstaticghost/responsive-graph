@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card__area">
+        <div class="card">
+            <p class="sub__heading">Salary</p>
+            <p id="salary-area" class="amount"></p>
+        </div>
+        <div class="card">
+            <p class="sub__heading">Pay period</p>
+            <p class="amount">Bi-weekly</p>
+        </div>
+        <div class="card">
+            <p class="sub__heading">Take home</p>
+            <p id="pay-area" class="amount"></p>
+        </div>
+        <div class="card">
+            <p class="sub__heading">Tax amount</p>
+            <p id="tax-area" class="amount"></p>
+        </div>
+    </div>
+    <div class="graph__wrapper desktop__graph">
+        <h1>Money gained per month</h1>
+        <div class="graph__area">
+            <div class="y__values">
+                <p class="y__value">600</p>
+                <p class="y__value">500</p>
+                <p class="y__value">400</p>
+                <p class="y__value">300</p>
+                <p class="y__value">200</p>
+                <p class="y__value">100</p>
+            </div>
+            <hr>
+            <div class="graph__ticks">
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+            </div>
+            <!--hidden when on mobile-->
+            <div class="data__area">
+                <div class="bar__wrapper">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <hr>
+                <div class="x__values">
+                    <p class="x__value">Jan</p>
+                    <p class="x__value">Feb</p>
+                    <p class="x__value">Mar</p>
+                    <p class="x__value">Apr</p>
+                    <p class="x__value">May</p>
+                    <p class="x__value">Jun</p>
+                    <p class="x__value">Jul</p>
+                    <p class="x__value">Aug</p>
+                    <p class="x__value">Sep</p>
+                    <p class="x__value">Oct</p>
+                    <p class="x__value">Nov</p>
+                    <p class="x__value">Dec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mobile graph 1-->
+    <div class="graph__wrapper mobile__graph">
+        <h1>Money gained per month (Jan - Jun)</h1>
+        <div class="graph__area">
+            <div class="y__values">
+                <p class="y__value">600</p>
+                <p class="y__value">500</p>
+                <p class="y__value">400</p>
+                <p class="y__value">300</p>
+                <p class="y__value">200</p>
+                <p class="y__value">100</p>
+            </div>
+            <hr>
+            <div class="graph__ticks">
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+            </div>
+            <div class="data__area">
+                <div class="bar__wrapper">
+                    <div class="bar mobile__bar1"></div>
+                    <div class="bar mobile__bar1"></div>
+                    <div class="bar mobile__bar1"></div>
+                    <div class="bar mobile__bar1"></div>
+                    <div class="bar mobile__bar1"></div>
+                    <div class="bar mobile__bar1"></div>
+                </div>
+                <hr>
+                <div class="x__values">
+                    <p class="x__value">Jan</p>
+                    <p class="x__value">Feb</p>
+                    <p class="x__value">Mar</p>
+                    <p class="x__value">Apr</p>
+                    <p class="x__value">May</p>
+                    <p class="x__value">Jun</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mobile graph 2-->
+    <div class="graph__wrapper mobile__graph">
+        <h1>Money gained per month <br>(Jul - Dec)</h1>
+        <div class="graph__area">
+            <div class="y__values">
+                <p class="y__value">600</p>
+                <p class="y__value">500</p>
+                <p class="y__value">400</p>
+                <p class="y__value">300</p>
+                <p class="y__value">200</p>
+                <p class="y__value">100</p>
+            </div>
+            <hr>
+            <div class="graph__ticks">
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+                <p class="tick">-</p>
+            </div>
+            <div class="data__area">
+                <div class="bar__wrapper">
+                    <div class="bar mobile__bar2"></div>
+                    <div class="bar mobile__bar2"></div>
+                    <div class="bar mobile__bar2"></div>
+                    <div class="bar mobile__bar2"></div>
+                    <div class="bar mobile__bar2"></div>
+                    <div class="bar mobile__bar2"></div>
+                </div>
+                <hr>
+                <div class="x__values">
+                    <p class="x__value">Jul</p>
+                    <p class="x__value">Aug</p>
+                    <p class="x__value">Sep</p>
+                    <p class="x__value">Oct</p>
+                    <p class="x__value">Nov</p>
+                    <p class="x__value">Dec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
